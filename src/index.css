@@ -1,0 +1,59 @@
+@import '@fontsource/fraunces/400.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/fraunces/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sky-top: #EAF1E4;
+  --color-sky-horizon: #FBF4E3;
+  --color-soil: #5B4636;
+  --color-path-stone: #CFC6B4;
+  --color-leaf-deep: #2F5D3A;
+  --color-leaf-mid: #5E8C4A;
+  --color-leaf-light: #A9C77A;
+  --color-bloom-marigold: #E8A33D;
+  --color-bloom-clay: #C65D3B;
+  --color-bloom-lavender: #8C7BB5;
+  --color-bloom-skyblue: #6FA3C8;
+  --color-text-ink: #1F2A1F;
+  --color-muted: #5B665B;
+  --color-card-cream: #FFFBF0;
+}
+
+body {
+  background-color: var(--color-sky-top);
+  color: var(--color-text-ink);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', serif;
+}
+
+/* Accessibility: Full reduction of all animations under prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hide scrollbars for clean horizontal submenus while retaining scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
