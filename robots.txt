@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap URL is omitted until configured by the site owner.
+# Do not invent a domain.
